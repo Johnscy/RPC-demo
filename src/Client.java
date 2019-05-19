@@ -6,7 +6,6 @@ import java.lang.reflect.Proxy;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 
-
 public class Client {
     @SuppressWarnings("unchecked")
     public static <T extends MyRPCService> T getRemoteProxyObj(final Class<? extends MyRPCService> serviceInterface, final InetSocketAddress addr){
